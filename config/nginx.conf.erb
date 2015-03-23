@@ -35,7 +35,7 @@ http {
 		server_name _;
 		keepalive_timeout 5;
                 gzip on;
-                gzip_types text/css;
+                gzip_types text/css application/javascript;
 
 		location / {
 			proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
